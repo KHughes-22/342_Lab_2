@@ -1,3 +1,4 @@
+#include "memoryhelp.c"
 
 extern const int OVERHEAD_SIZE;
 

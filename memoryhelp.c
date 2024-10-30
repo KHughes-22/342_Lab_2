@@ -14,10 +14,10 @@ struct Block* free_head;
 
 void my_initialize_heap(int size) {
 	//YOUR CODE
-	struct Block* first_block = (struct Black*)mallc(size);
+	struct Block* first_block = (struct Block*)malloc(size);
 	first_block->block_size = size - OVERHEAD_SIZE;
 	first_block->next_block = 0;
-	free_head->next_block = first_block;
+	free_head = first_block;
 }
 
 void* my_alloc(int size) {
@@ -96,7 +96,6 @@ void my_free(void* data) {
 	free_head = freed_block;
 }
 
-int main() {
-	//Write your own tests
-        //Intructor will provide the main test next week
+int main(){
+	return 0;
 }
