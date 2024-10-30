@@ -1,3 +1,6 @@
+
+extern const int OVERHEAD_SIZE;
+
 void menuOptionOne() {
    int *numOne = my_alloc(sizeof(int));
    printf("Address of int A: %p\n", numOne); 
